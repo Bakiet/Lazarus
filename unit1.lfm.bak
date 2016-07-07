@@ -1,0 +1,33 @@
+object frmMenu: TfrmMenu
+  Left = 1215
+  Height = 458
+  Top = 675
+  Width = 713
+  Caption = 'Menu'
+  Menu = MainMenu1
+  LCLVersion = '1.6.0.4'
+  object MainMenu1: TMainMenu
+    left = 8
+    top = 8
+    object MenuMain: TMenuItem
+      Caption = 'Menu'
+      OnClick = MenuMainClick
+      object MenuCrearFactura: TMenuItem
+        Caption = 'Crear Factura'
+        OnClick = MenuCrearFacturaClick
+      end
+      object MenuFacturas_porpagar: TMenuItem
+        Caption = 'Facturas por pagar'
+        OnClick = MenuFacturas_porpagarClick
+      end
+      object MenuFactura_porcobrar: TMenuItem
+        Caption = 'Facturas por cobrar'
+        OnClick = MenuFactura_porcobrarClick
+      end
+    end
+    object MenuExit: TMenuItem
+      Caption = 'Exit'
+      OnClick = MenuExitClick
+    end
+  end
+end

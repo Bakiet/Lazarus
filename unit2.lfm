@@ -1,0 +1,9 @@
+object frmCrearFactura: TfrmCrearFactura
+  Left = 809
+  Height = 573
+  Top = 389
+  Width = 824
+  Caption = 'Crear Factura'
+  OnCreate = FormCreate
+  LCLVersion = '1.6.0.4'
+end

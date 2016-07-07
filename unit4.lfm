@@ -1,0 +1,9 @@
+object frmFacturas_por_cobrar: TfrmFacturas_por_cobrar
+  Left = 307
+  Height = 609
+  Top = 255
+  Width = 1092
+  Caption = 'Facturas Por Cobrar'
+  OnCreate = FormCreate
+  LCLVersion = '1.6.0.4'
+end

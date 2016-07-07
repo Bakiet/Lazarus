@@ -1,0 +1,56 @@
+object frmFacturas_por_pagar: TfrmFacturas_por_pagar
+  Left = 403
+  Height = 619
+  Top = 157
+  Width = 1070
+  Caption = 'Facturas Por Pagar'
+  ClientHeight = 619
+  ClientWidth = 1070
+  OnCreate = FormCreate
+  LCLVersion = '1.6.0.4'
+  object dgFacturasPP: TDBGrid
+    Left = 16
+    Height = 384
+    Top = 48
+    Width = 1044
+    Color = clWindow
+    Columns = <>
+    DataSource = DataSourceFPP
+    TabOrder = 0
+  end
+  object Label1: TLabel
+    Left = 16
+    Height = 15
+    Top = 442
+    Width = 192
+    Caption = 'NO CONECTADO A BASE DE DATOS'
+    Font.Color = clRed
+    ParentColor = False
+    ParentFont = False
+  end
+  object DataSourceFPP: TDataSource
+    left = 160
+    top = 560
+  end
+  object SQLQuery1: TSQLQuery
+    FieldDefs = <>
+    Options = []
+    Params = <>
+    left = 264
+    top = 560
+  end
+  object SQLTransactionFPP: TSQLTransaction
+    Active = False
+    Options = []
+    left = 360
+    top = 560
+  end
+  object ODBCConnection1: TODBCConnection
+    Connected = False
+    LoginPrompt = False
+    KeepConnection = False
+    Options = []
+    left = 164
+    top = 490
+  end
+end
